@@ -1,7 +1,6 @@
 import { connect } from 'react-redux'
-import { ADD } from '../Services/Action/action'
+import { ADD, REMOVE } from '../Services/Action/action'
 import Form from '../components/Form'
-
 const mapStateToProps = (state) => ({
   inputData: state,
 })
@@ -9,6 +8,10 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   addHandler: (data) => {
     dispatch(ADD(data))
+  },
+  removeHandler: (dat) => {
+    console.log('Controller', dat)
+    dispatch(REMOVE(dat))
   },
 })
 

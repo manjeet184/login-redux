@@ -19,7 +19,7 @@ const Form = (props) => {
   return (
     <div>
       <Container maxWidth="sm">
-        <h5>Login your details</h5>
+        <h5>Add your details</h5>
         <form>
           <TextField
             name="name"
